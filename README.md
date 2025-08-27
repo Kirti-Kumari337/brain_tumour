@@ -1,13 +1,11 @@
 # Brain-Tumor-Detector
-Building a detection model using a convolutional neural network in Tensorflow & Keras.<br>
-Used a brain MRI images data founded on Kaggle. You can find it [here](https://www.kaggle.com/navoneel/brain-mri-images-for-brain-tumor-detection).<br>
+Building a detection model using a convolutional neural network in Tensorflow & Keras.
+Used a brain MRI images data founded on Kaggle.
 
 **About the data:**<br>
 The dataset contains 2 folders: yes and no which contains 253 Brain MRI Images. The folder yes contains 155 Brain MRI Images that are tumorous and the folder no contains 98 Brain MRI Images that are non-tumorous.
 
-# Getting Started
 
-**Note:** sometimes viewing IPython notebooks using GitHub viewer doesn't work as expected, so you can always view them using [nbviewer](https://nbviewer.jupyter.org/).
 
 ## Data Augmentation:
 
@@ -91,21 +89,6 @@ These resutls are very good considering that the data is balanced.
 | F1 score  | 0.91           | 0.88     |
 
 
-# Final Notes
-
-What's in the files?
-
-1. The code in the IPython notebooks.
-2. The weights for all the models. The best model is named as 'cnn-parameters-improvement-23-0.91.model'.
-3. The models are stored as *.model* files. They can be restored as follows:
-
-
-```
-from tensorflow.keras.models import load_model
-best_model = load_model(filepath='models/cnn-parameters-improvement-23-0.91.model')
-```
-
-4. The original data in the folders named 'yes' and 'no'. And, the augmented data in the folder named 'augmented data'.
 
 
 Contributes are welcome!
